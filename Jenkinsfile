@@ -17,8 +17,8 @@ pipeline{
         stage('Start app and run tests'){
             steps{
                 script{
-                    bat 'npm start &'
-                    bat 'npm test'
+                    bat 'start /b npm start &'
+                    bat 'start npm test'
                 }
             }
         }
